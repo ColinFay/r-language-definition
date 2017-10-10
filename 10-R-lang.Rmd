@@ -1,0 +1,42 @@
+#  Exception handling
+<p>The exception handling facilities in R are provided through two mechanisms. Functions such as <code class="calibre7">stop</code> or <code class="calibre7">warning</code> can be called directly or options such as <code class="calibre7">&quot;warn&quot;</code> can be used to control the handling of problems.</p>
+<hr />
+<p><a href="" id="stop"></a> <a href="" id="stop-1"></a></p>
+<h3 id="stop" class="section">8.1 stop</h3>
+<p><a href="" id="index-stop"></a></p>
+<p>A call to <code class="calibre7">stop</code> halts the evaluation of the current expression, prints the message argument and returns execution to top-level.</p>
+<hr />
+<p><a href="" id="warning"></a> <a href="" id="warning-1"></a></p>
+<h3 id="warning" class="section">8.2 warning</h3>
+<p><a href="" id="index-warning"></a> <a href="" id="index-warnings"></a></p>
+<p>The function <code class="calibre7">warning</code> takes a single argument that is a character string. The behaviour of a call to <code class="calibre7">warning</code> depends on the value of the option <code class="calibre7">&quot;warn&quot;</code>. If <code class="calibre7">&quot;warn&quot;</code> is negative warnings are ignored. If it is zero, they are stored and printed after the top-level function has completed. If it is one, they are printed as they occur and if it is 2 (or larger) warnings are turned into errors.</p>
+<p>If <code class="calibre7">&quot;warn&quot;</code> is zero (the default), a variable <code class="calibre7">last.warning</code> is created and the messages associated with each call to <code class="calibre7">warning</code> are stored, sequentially, in this vector. If there are fewer than 10 warnings they are printed after the function has finished evaluating. If there are more than 10 then a message indicating how many warnings occurred is printed. In either case <code class="calibre7">last.warning</code> contains the vector of messages, and <code class="calibre7">warnings</code> provides a way to access and print it.</p>
+<hr />
+<p><a href="" id="on_002eexit"></a> <a href="" id="on_002eexit-1"></a></p>
+<h3 id="on.exit" class="section">8.3 on.exit</h3>
+<p><a href="" id="index-on_002eexit"></a></p>
+<p>A function can insert a call to <code class="calibre7">on.exit</code> at any point in the body of a function. The effect of a call to <code class="calibre7">on.exit</code> is to store the value of the body so that it will be executed when the function exits. This allows the function to change some system parameters and to ensure that they are reset to appropriate values when the function is finished. The <code class="calibre7">on.exit</code> is guaranteed to be executed when the function exits either directly or as the result of a warning.</p>
+<p>An error in the evaluation of the <code class="calibre7">on.exit</code> code causes an immediate jump to top-level without further processing of the <code class="calibre7">on.exit</code> code.</p>
+<p><code class="calibre7">on.exit</code> takes a single argument which is an expression to be evaluated when the function is exited.</p>
+<hr />
+<p><a href="" id="Error-options"></a> <a href="" id="Error-options-1"></a></p>
+<h3 id="error-options" class="section">8.4 Error options</h3>
+<p>There are a number of <code class="calibre7">options</code> variables that can be used to control how R handles errors and warnings. They are listed in the table below.</p>
+<dl>
+<dt>‘warn’</dt>
+<dd><p>Controls the printing of warnings.</p>
+</dd>
+<dt>‘warning.expression’</dt>
+<dd><p>Sets an expression that is to be evaluated when a warning occurs. The normal printing of warnings is suppressed if this option is set.</p>
+</dd>
+<dt>‘error’</dt>
+<dd><p>Installs an expression that will be evaluated when an error occurs. The normal printing of error messages and warning messages precedes the evaluation of the expression.</p>
+</dd>
+</dl>
+<p>Expressions installed by <code class="calibre7">options(&quot;error&quot;)</code> are evaluated before calls to <code class="calibre7">on.exit</code> are carried out.</p>
+<p>One can use <code class="calibre7">options(error = expression(q(&quot;yes&quot;)))</code> to get R to quit when an error has been signalled. In this case an error will cause R to shut down and the global environment will be saved.</p>
+<hr />
+<p><a href="" id="Debugging"></a> <a href="" id="Debugging-1"></a></p>
+<div id="calibre_pb_19" class="calibre5">
+
+</div>

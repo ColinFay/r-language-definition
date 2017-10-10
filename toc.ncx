@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta content="2aaf0349-dc36-4b28-a7e6-86ac425f54e8" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (3.8.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>R Language Definition</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="uZss5LQdU9tfkiCNURAnMzD" playOrder="1">
+      <navLabel>
+        <text>1 Introduction</text>
+      </navLabel>
+      <content src="R-lang_split_003.html"/>
+    </navPoint>
+    <navPoint id="ucAauome6T5EPRHLqqOv4K2" playOrder="2">
+      <navLabel>
+        <text>2 Objects</text>
+      </navLabel>
+      <content src="R-lang_split_004.html"/>
+    </navPoint>
+    <navPoint id="uNO5fZIPB5jl2d2DpxAtvk5" playOrder="3">
+      <navLabel>
+        <text>3 Evaluation of expressions</text>
+      </navLabel>
+      <content src="R-lang_split_005.html"/>
+    </navPoint>
+    <navPoint id="uM2Y2f6nnHY7Eal7Qmavu32" playOrder="4">
+      <navLabel>
+        <text>4 Functions</text>
+      </navLabel>
+      <content src="R-lang_split_006.html"/>
+    </navPoint>
+    <navPoint id="uq3CKt5HSjlDdDPhlZMY3dA" playOrder="5">
+      <navLabel>
+        <text>5 Object-oriented programming</text>
+      </navLabel>
+      <content src="R-lang_split_007.html"/>
+    </navPoint>
+    <navPoint id="udB7GjaiQVkTWx5FbADs7zB" playOrder="6">
+      <navLabel>
+        <text>6 Computing on the language</text>
+      </navLabel>
+      <content src="R-lang_split_008.html"/>
+    </navPoint>
+    <navPoint id="uzIMB2JLYJtdalp796s7ztG" playOrder="7">
+      <navLabel>
+        <text>7 System and foreign language interfaces</text>
+      </navLabel>
+      <content src="R-lang_split_009.html"/>
+    </navPoint>
+    <navPoint id="u4aZ68AbKSjwflure3tZ738" playOrder="8">
+      <navLabel>
+        <text>8 Exception handling</text>
+      </navLabel>
+      <content src="R-lang_split_010.html"/>
+    </navPoint>
+    <navPoint id="uAuD6Jt7iTVUFeKaVAaOSY4" playOrder="9">
+      <navLabel>
+        <text>9 Debugging</text>
+      </navLabel>
+      <content src="R-lang_split_011.html"/>
+    </navPoint>
+    <navPoint id="uEXMtedirWqkHxoWwTGKorA" playOrder="10">
+      <navLabel>
+        <text>10 Parser</text>
+      </navLabel>
+      <content src="R-lang_split_012.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

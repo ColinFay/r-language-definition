@@ -1,0 +1,100 @@
+#  Debugging
+<p>Debugging code has always been a bit of an art. R provides several tools that help users find problems in their code. These tools halt execution at particular points in the code and the current state of the computation can be inspected.</p>
+<p>Most debugging takes place either through calls to <code class="calibre7">browser</code> or <code class="calibre7">debug</code>. Both of these functions rely on the same internal mechanism and both provide the user with a special prompt. Any command can be typed at the prompt. The evaluation <a href="" id="index-environment-18"></a> environment for the command is the currently active environment. This allows you to examine the current state of any variables etc.</p>
+<p>There are five special commands that R interprets differently. They are,</p>
+<dl>
+<dt>‘<span>RET</span>’</dt>
+<dd><p>Go to the next statement if the function is being debugged. Continue execution if the browser was invoked.</p>
+</dd>
+<dt>‘c’<br />
+‘cont’</dt>
+<dd><p>Continue the execution.</p>
+</dd>
+<dt>‘n’</dt>
+<dd><p>Execute the next statement in the function. This works from the browser as well.</p>
+</dd>
+<dt>‘where’</dt>
+<dd><p>Show the call stack</p>
+</dd>
+<dt>‘Q’</dt>
+<dd><p>Halt execution and jump to the top-level immediately.</p>
+</dd>
+</dl>
+<p><a href="" id="index-name-11"></a></p>
+<p>If there is a local variable with the same name as one of the special commands listed above then its value can be accessed by using <code class="calibre7">get</code>. A call to <code class="calibre7">get</code> with the name in quotes will retrieve the value in the current <a href="" id="index-environment-19"></a> environment.</p>
+<p>The debugger provides access only to interpreted expressions. If a function calls a foreign language (such as <strong>C</strong>) then no access to the statements in that language is provided. Execution will halt on the next statement that is evaluated in R. A symbolic debugger such as <code class="calibre7">gdb</code> can be used to debug compiled code.</p>
+<hr />
+<p><a href="" id="browser"></a> <a href="" id="browser-1"></a></p>
+<h3 id="browser" class="section">9.1 browser</h3>
+<p><a href="" id="index-browser"></a></p>
+<p>A call to the function <code class="calibre7">browser</code> causes R to halt execution at that point and to provide the user with a special prompt. Arguments to <code class="calibre7">browser</code> are ignored.</p>
+<div class="example">
+<pre class="example1"><code>&gt; foo &lt;- function(s) {
++ c &lt;- 3
++ browser()
++ }
+&gt; foo(4)
+Called from: foo(4)
+Browse[1]&gt; s
+[1] 4
+Browse[1]&gt; get(&quot;c&quot;)
+[1] 3
+Browse[1]&gt;</code></pre>
+</div>
+<hr />
+<p><a href="" id="debug_002fundebug"></a> <a href="" id="debug_002fundebug-1"></a></p>
+<h3 id="debugundebug" class="section">9.2 debug/undebug</h3>
+<p><a href="" id="index-debug"></a> <a href="" id="index-undebug"></a></p>
+<p>The debugger can be invoked on any function by using the command <code class="calibre7">debug(fun)</code>. Subsequently, each time that function is evaluated the debugger is invoked. The debugger allows you to control the evaluation of the statements in the body of the function. Before each statement is executed the statement is printed out and a special prompt provided. Any command can be given, those in the table above have special meaning.</p>
+<p>Debugging is turned off by a call to <code class="calibre7">undebug</code> with the function as an argument.</p>
+<div class="example">
+<pre class="example1"><code>&gt; debug(mean.default)
+&gt; mean(1:10)
+debugging in: mean.default(1:10)
+debug: {
+    if (na.rm)
+        x &lt;- x[!is.na(x)]
+    trim &lt;- trim[1]
+    n &lt;- length(c(x, recursive = TRUE))
+    if (trim &gt; 0) {
+        if (trim &gt;= 0.5)
+            return(median(x, na.rm = FALSE))
+        lo &lt;- floor(n * trim) + 1
+        hi &lt;- n + 1 - lo
+        x &lt;- sort(x, partial = unique(c(lo, hi)))[lo:hi]
+        n &lt;- hi - lo + 1
+    }
+    sum(x)/n
+}
+Browse[1]&gt;
+debug: if (na.rm) x &lt;- x[!is.na(x)]
+Browse[1]&gt;
+debug: trim &lt;- trim[1]
+Browse[1]&gt;
+debug: n &lt;- length(c(x, recursive = TRUE))
+Browse[1]&gt; c
+exiting from: mean.default(1:10)
+[1] 5.5</code></pre>
+</div>
+<hr />
+<p><a href="" id="trace_002funtrace"></a> <a href="" id="trace_002funtrace-1"></a></p>
+<h3 id="traceuntrace" class="section">9.3 trace/untrace</h3>
+<p><a href="" id="index-trace"></a> <a href="" id="index-untrace"></a></p>
+<p>Another way of monitoring the behaviour of R is through the <code class="calibre7">trace</code> mechanism. <code class="calibre7">trace</code> is called with a single argument that is the name of the function you want to trace. The name does not need to be quoted but for some functions you will need to quote the name in order to avoid a syntax error.</p>
+<p>When <code class="calibre7">trace</code> has been invoked on a function then every time that function is evaluated the call to it is printed out. This mechanism is removed by calling <code class="calibre7">untrace</code> with the function as an argument.</p>
+<div class="example">
+<pre class="example1"><code>&gt; trace(&quot;[&lt;-&quot;)
+&gt; x &lt;- 1:10
+&gt; x[3] &lt;- 4
+trace: &quot;[&lt;-&quot;(*tmp*, 3, value = 4)</code></pre>
+</div>
+<hr />
+<p><a href="" id="traceback"></a> <a href="" id="traceback-1"></a></p>
+<h3 id="traceback" class="section">9.4 traceback</h3>
+<p><a href="" id="index-traceback"></a></p>
+<p>When an error has caused a jump to top-level a special variable called <code class="calibre7">.Traceback</code> is placed into the base environment. <code class="calibre7">.Traceback</code> is a character vector with one entry for each function call that was active at the time the error occurred. An examination of <code class="calibre7">.Traceback</code> can be carried out by a call to <code class="calibre7">traceback</code>.</p>
+<hr />
+<p><a href="" id="Parser"></a> <a href="" id="Parser-1"></a></p>
+<div id="calibre_pb_21" class="calibre5">
+
+</div>

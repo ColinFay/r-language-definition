@@ -1,0 +1,16 @@
+# Appendix A References
+<p>Richard A. Becker, John M. Chambers and Allan R. Wilks (1988), <em>The New S Language.</em> Chapman &amp; Hall, New York. This book is often called the “<em>Blue Book</em>”.</p>
+<div class="contents">
+<hr />
+<h4 id="footnotes" class="subsection">Footnotes</h4>
+<h3 id="section" class="section"><a href="objects.html#DOCF1" id="FOOT1" class="calibre21">(1)</a></h3>
+<p>actually two, but this draft manual predates the <strong>methods</strong> package.</p>
+<h3 id="section-1" class="section"><a href="writing-package-vignettes.html#DOCF2" id="FOOT2" class="calibre21">(2)</a></h3>
+<p>Evaluation always takes place in an <a href="" id="index-environment-4"></a> environment. See <a href="writing-package-vignettes.html#Scope-of-variables">Scope of variables</a> for more details.</p>
+<h3 id="section-2" class="section"><a href="writing-package-vignettes.html#DOCF3" id="FOOT3" class="calibre21">(3)</a></h3>
+<p>Looping is the repeated evaluation of a statement or block of statements.</p>
+<h3 id="section-3" class="section"><a href="parser.html#DOCF4" id="FOOT4" class="calibre21">(4)</a></h3>
+<p>such as <code class="calibre7">U+A0</code>, non-breaking space, and <code class="calibre7">U+3000</code>, ideographic space.</p>
+</div>
+<hr />
+
