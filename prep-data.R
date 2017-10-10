@@ -5,6 +5,7 @@ library(magrittr)
 
 file.create("ga")
 
+
 write('\noutput_dir: "docs"', file="_bookdown.yml",append=TRUE)
 
 replace_in_file <- function(file, pattern, replacement){

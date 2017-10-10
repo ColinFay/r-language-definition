@@ -27,3 +27,182 @@ To https://github.com/ColinFay/r-language-definition.git
  * [new branch]      master -> master
 La branche master est paramétrée pour suivre la branche distante master depuis origin.
 ]0;/home/colin/R/r-language-definition]0;colin@colin-MacBookPro: ~/R/r-language-definition[01;32mcolin@colin-MacBookPro[00m:[01;34m~/R/r-language-definition[00m$ git add -A 
+]0;/home/colin/R/r-language-definition]0;colin@colin-MacBookPro: ~/R/r-language-definition[01;32mcolin@colin-MacBookPro[00m:[01;34m~/R/r-language-definition[00m$ hi[K[Kgit commit -ù[K[K
+[master a25babd] first commit
+ 142 files changed, 20278 insertions(+)
+ create mode 100644 .Rproj.user/B03E3524/console06/7F639B6C
+ create mode 100644 .Rproj.user/B03E3524/console06/7F639B6C.env
+ create mode 100644 .Rproj.user/B03E3524/console06/INDEX001
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/13EEBCA
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/1BE26F6C
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/282B92BC
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/2A814245
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/2C9FAC61
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/3B7F81F6
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/3CDABDE3
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/45267687
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/5E1512B1
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/71942FFD
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/720FEEC9
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/7EE06705
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/82440F7
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/86678F8E
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/90F02FBE
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/95087F9C
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/9D389C59
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/A3F375FB
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/A8B95D92
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/B32290E0
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/BD8FA9ED
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/DE24CBFC
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/FA853E5E
+ create mode 100644 .Rproj.user/B03E3524/sources/prop/INDEX
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/1402898F-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/169C9FA6-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/1C1C5AC2-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/2BB1C51E-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/303C7599-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/3FEF58CE-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/407A16BD-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/44ABF2E-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/4B0CEC61-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/508CCC8C-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/5325E9EE-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/53DEFC2D-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/602B09BC-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/610DC1B-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/615390C7-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/6C560208
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/6C560208-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/725D4BFE
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/725D4BFE-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/900509D1-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/9B2D289-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/9FC2002D-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/A9333B0E-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/ABD1480A-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/B402B562-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/BF5C78CA-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/C265A70A
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/C265A70A-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/CD1F2343-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/CE9AD04F-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/D0888B69-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/D5D201D9-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/E2A19F30-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/E6CD3205-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/E8EF96B4-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/FA18162F-contents
+ create mode 100644 .Rproj.user/B03E3524/sources/s-C44750AA/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/146B97FA-index/1/B03E3524C44750AA/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/146B97FA-index/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/18F61F6-04-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/1B62F611-14-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/1FD47035-12-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/25F0FEE5-05-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/39549579-15-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/4335344-13-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/6419CBB4-10-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/8295D575-07-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/B32A1115-06-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/C05417B4-11-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/D68B0E0B-09-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/F7DA632D-08-R-lang/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 04-R-lang.Rmd
+ create mode 100644 05-R-lang.Rmd
+ create mode 100644 06-R-lang.Rmd
+ create mode 100644 07-R-lang.Rmd
+ create mode 100644 08-R-lang.Rmd
+ create mode 100644 09-R-lang.Rmd
+ create mode 100644 10-R-lang.Rmd
+ create mode 100644 11-R-lang.Rmd
+ create mode 100644 12-R-lang.Rmd
+ create mode 100644 13-R-lang.Rmd
+ create mode 100644 14-R-lang.Rmd
+ create mode 100644 15-R-lang.Rmd
+ create mode 100644 META-INF/container.xml
+ create mode 100644 _bookdown.yml
+ create mode 100644 _output.yml
+ create mode 100644 book.bib
+ create mode 100644 content.opf
+ create mode 100644 cover_image.jpg
+ create mode 100644 docs/appendix-a-references.html
+ create mode 100644 docs/computing-on-the-language.html
+ create mode 100644 docs/concept-index.html
+ create mode 100644 docs/debugging.html
+ create mode 100644 docs/evaluation-of-expressions.html
+ create mode 100644 docs/exception-handling.html
+ create mode 100644 docs/function-and-variable-index.html
+ create mode 100644 docs/functions.html
+ create mode 100644 docs/index.html
+ create mode 100644 docs/introduction.html
+ create mode 100644 docs/libs/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf
+ create mode 100644 docs/libs/gitbook-2.6.7/css/plugin-bookdown.css
+ create mode 100644 docs/libs/gitbook-2.6.7/css/plugin-fontsettings.css
+ create mode 100644 docs/libs/gitbook-2.6.7/css/plugin-highlight.css
+ create mode 100644 docs/libs/gitbook-2.6.7/css/plugin-search.css
+ create mode 100644 docs/libs/gitbook-2.6.7/css/style.css
+ create mode 100644 docs/libs/gitbook-2.6.7/js/app.min.js
+ create mode 100644 docs/libs/gitbook-2.6.7/js/jquery.highlight.js
+ create mode 100644 docs/libs/gitbook-2.6.7/js/lunr.js
+ create mode 100644 docs/libs/gitbook-2.6.7/js/plugin-bookdown.js
+ create mode 100644 docs/libs/gitbook-2.6.7/js/plugin-fontsettings.js
+ create mode 100644 docs/libs/gitbook-2.6.7/js/plugin-search.js
+ create mode 100644 docs/libs/gitbook-2.6.7/js/plugin-sharing.js
+ create mode 100644 docs/libs/jquery-2.2.3/jquery.min.js
+ create mode 100644 docs/object-oriented-programming.html
+ create mode 100644 docs/objects.html
+ create mode 100644 docs/parser.html
+ create mode 100644 docs/r-language-definition.html
+ create mode 100644 docs/search_index.json
+ create mode 100644 docs/style.css
+ create mode 100644 docs/system-and-foreign-language-interfaces.html
+ create mode 100644 ga
+ create mode 100644 index.Rmd
+ create mode 100644 mimetype
+ create mode 100644 packages.bib
+ create mode 100644 page_styles.css
+ create mode 100644 preamble.tex
+ create mode 100644 prep-data.R
+ create mode 100644 r-lang.epub
+ create mode 100644 r-language-definition.Rproj
+ create mode 100644 style.css
+ create mode 100644 stylesheet.css
+ create mode 100644 titlepage.xhtml
+ create mode 100644 toc.ncx
+]0;/home/colin/R/r-language-definition]0;colin@colin-MacBookPro: ~/R/r-language-definition[01;32mcolin@colin-MacBookPro[00m:[01;34m~/R/r-language-definition[00m$ git push
+warning: push.default n'est pas défini ; sa valeur implicite a changé dans Git 2.0
+de 'matching' vers 'simple'. Pour supprimer ce message et maintenir
+le comportement actuel après la modification de la valeur de défaut, utilisez :
+
+  git config --global push.default matching
+
+Pour supprimer ce message et adopter le nouveau comportement maintenant, utilisez :
+
+  git config --global push.default simple
+
+Quand push.default vaudra 'matching', git poussera les branches locales
+sur les branches distantes qui existent déjà avec le même nom.
+
+Depuis Git 2.0, Git utilise par défaut le comportement plus conservatif 'simple'
+qui ne pousse la branche courante que vers la branche distante correspondante
+que 'git pull' utilise pour mettre à jour la branche courante.
+ 
+Voir 'git help config' et chercher 'push.default' pour plus d'information.
+(le mode 'simple' a été introduit dans Git 1.7.11. Utilisez le mode similaire
+'current' au lieu de 'simple' si vous utilisez de temps en temps d'anciennes versions de Git)
+
+Décompte des objets: 142, fait.
+Delta compression using up to 4 threads.
+Compression des objets:   0% (1/118)   Compression des objets:   1% (2/118)   Compression des objets:   2% (3/118)   Compression des objets:   3% (4/118)   Compression des objets:   4% (5/118)   Compression des objets:   5% (6/118)   Compression des objets:   6% (8/118)   Compression des objets:   7% (9/118)   Compression des objets:   8% (10/118)   Compression des objets:   9% (11/118)   Compression des objets:  10% (12/118)   Compression des objets:  11% (13/118)   Compression des objets:  12% (15/118)   Compression des objets:  13% (16/118)   Compression des objets:  14% (17/118)   Compression des objets:  15% (18/118)   Compression des objets:  16% (19/118)   Compression des objets:  17% (21/118)   Compression des objets:  18% (22/118)   Compression des objets:  19% (23/118)   Compression des objets:  20% (24/118)   Compression des objets:  21% (25/118)   Compression des objets:  22% (26/118)   Compression des objets:  23% (28/118)   Compression des objets:  24% (29/118)   Compression des objets:  25% (30/118)   Compression des objets:  26% (31/118)   Compression des objets:  27% (32/118)   Compression des objets:  28% (34/118)   Compression des objets:  29% (35/118)   Compression des objets:  30% (36/118)   Compression des objets:  31% (37/118)   Compression des objets:  32% (38/118)   Compression des objets:  33% (39/118)   Compression des objets:  34% (41/118)   Compression des objets:  35% (42/118)   Compression des objets:  36% (43/118)   Compression des objets:  37% (44/118)   Compression des objets:  38% (45/118)   Compression des objets:  39% (47/118)   Compression des objets:  40% (48/118)   Compression des objets:  41% (49/118)   Compression des objets:  42% (50/118)   Compression des objets:  43% (51/118)   Compression des objets:  44% (52/118)   Compression des objets:  45% (54/118)   Compression des objets:  46% (55/118)   Compression des objets:  47% (56/118)   Compression des objets:  48% (57/118)   Compression des objets:  49% (58/118)   Compression des objets:  50% (59/118)   Compression des objets:  51% (61/118)   Compression des objets:  52% (62/118)   Compression des objets:  53% (63/118)   Compression des objets:  54% (64/118)   Compression des objets:  55% (65/118)   Compression des objets:  56% (67/118)   Compression des objets:  57% (68/118)   Compression des objets:  58% (69/118)   Compression des objets:  59% (70/118)   Compression des objets:  60% (71/118)   Compression des objets:  61% (72/118)   Compression des objets:  62% (74/118)   Compression des objets:  63% (75/118)   Compression des objets:  64% (76/118)   Compression des objets:  65% (77/118)   Compression des objets:  66% (78/118)   Compression des objets:  67% (80/118)   Compression des objets:  68% (81/118)   Compression des objets:  69% (82/118)   Compression des objets:  70% (83/118)   Compression des objets:  71% (84/118)   Compression des objets:  72% (85/118)   Compression des objets:  73% (87/118)   Compression des objets:  74% (88/118)   Compression des objets:  75% (89/118)   Compression des objets:  76% (90/118)   Compression des objets:  77% (91/118)   Compression des objets:  78% (93/118)   Compression des objets:  79% (94/118)   Compression des objets:  80% (95/118)   Compression des objets:  81% (96/118)   Compression des objets:  82% (97/118)   Compression des objets:  83% (98/118)   Compression des objets:  84% (100/118)   Compression des objets:  85% (101/118)   Compression des objets:  86% (102/118)   Compression des objets:  87% (103/118)   Compression des objets:  88% (104/118)   Compression des objets:  89% (106/118)   Compression des objets:  90% (107/118)   Compression des objets:  91% (108/118)   Compression des objets:  92% (109/118)   Compression des objets:  93% (110/118)   Compression des objets:  94% (111/118)   Compression des objets:  95% (113/118)   Compression des objets:  96% (114/118)   Compression des objets:  97% (115/118)   Compression des objets:  98% (116/118)   Compression des objets:  99% (117/118)   Compression des objets: 100% (118/118)   Compression des objets: 100% (118/118), fait.
+Écriture des objets:   0% (1/142)   Écriture des objets:   1% (2/142)   Écriture des objets:   2% (3/142)   Écriture des objets:   3% (5/142)   Écriture des objets:   4% (6/142)   Écriture des objets:   5% (8/142)   Écriture des objets:   6% (9/142)   Écriture des objets:   7% (10/142)   Écriture des objets:   8% (12/142)   Écriture des objets:   9% (13/142)   Écriture des objets:  10% (15/142)   Écriture des objets:  11% (16/142)   Écriture des objets:  12% (18/142)   Écriture des objets:  13% (19/142)   Écriture des objets:  14% (20/142)   Écriture des objets:  15% (22/142)   Écriture des objets:  16% (23/142)   Écriture des objets:  17% (25/142)   Écriture des objets:  18% (26/142)   Écriture des objets:  19% (27/142)   Écriture des objets:  20% (29/142)   Écriture des objets:  21% (30/142)   Écriture des objets:  22% (32/142)   Écriture des objets:  23% (34/142)   Écriture des objets:  24% (35/142)   Écriture des objets:  25% (36/142)   Écriture des objets:  26% (37/142)   Écriture des objets:  27% (39/142)   Écriture des objets:  28% (40/142)   Écriture des objets:  29% (42/142)   Écriture des objets:  30% (43/142)   Écriture des objets:  31% (45/142)   Écriture des objets:  33% (47/142)   Écriture des objets:  34% (49/142)   Écriture des objets:  35% (50/142)   Écriture des objets:  36% (52/142)   Écriture des objets:  37% (53/142)   Écriture des objets:  38% (54/142)   Écriture des objets:  39% (56/142)   Écriture des objets:  40% (57/142)   Écriture des objets:  41% (59/142)   Écriture des objets:  42% (60/142)   Écriture des objets:  43% (62/142)   Écriture des objets:  44% (63/142)   Écriture des objets:  45% (64/142)   Écriture des objets:  46% (66/142)   Écriture des objets:  47% (67/142)   Écriture des objets:  48% (69/142)   Écriture des objets:  49% (70/142)   Écriture des objets:  50% (71/142)   Écriture des objets:  51% (73/142)   Écriture des objets:  52% (74/142)   Écriture des objets:  53% (76/142)   Écriture des objets:  54% (77/142)   Écriture des objets:  55% (79/142)   Écriture des objets:  56% (80/142)   Écriture des objets:  57% (81/142)   Écriture des objets:  58% (83/142)   Écriture des objets:  59% (84/142)   Écriture des objets:  60% (86/142)   Écriture des objets:  61% (87/142)   Écriture des objets:  62% (89/142)   Écriture des objets:  63% (90/142)   Écriture des objets:  64% (91/142)   Écriture des objets:  65% (93/142)   Écriture des objets:  66% (94/142)   Écriture des objets:  67% (96/142)   Écriture des objets:  68% (97/142)   Écriture des objets:  69% (99/142)   Écriture des objets:  70% (100/142)   Écriture des objets:  71% (101/142)   Écriture des objets:  72% (103/142)   Écriture des objets:  73% (104/142)   Écriture des objets:  74% (106/142)   Écriture des objets:  75% (107/142)   Écriture des objets:  76% (108/142)   Écriture des objets:  77% (110/142)   Écriture des objets:  78% (111/142)   Écriture des objets:  79% (113/142)   Écriture des objets:  80% (114/142)   Écriture des objets:  81% (116/142)   Écriture des objets:  82% (117/142)   Écriture des objets:  83% (118/142)   Écriture des objets:  84% (120/142)   Écriture des objets:  85% (121/142)   Écriture des objets:  86% (123/142)   Écriture des objets:  87% (124/142)   Écriture des objets:  88% (125/142)   Écriture des objets:  89% (127/142)   Écriture des objets:  90% (128/142)   Écriture des objets:  91% (130/142)   Écriture des objets:  92% (131/142)   Écriture des objets:  93% (133/142)   Écriture des objets:  94% (134/142)   Écriture des objets:  95% (135/142)   Écriture des objets:  96% (137/142)   Écriture des objets:  97% (138/142)   Écriture des objets:  98% (140/142)   Écriture des objets:  99% (141/142)   Écriture des objets: 100% (142/142)   Écriture des objets: 100% (142/142), 549.14 KiB | 0 bytes/s, fait.
+Total 142 (delta 16), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/16)   [Kremote: Resolving deltas:   6% (1/16)   [Kremote: Resolving deltas:  31% (5/16)   [Kremote: Resolving deltas:  43% (7/16)   [Kremote: Resolving deltas:  50% (8/16)   [Kremote: Resolving deltas:  56% (9/16)   [Kremote: Resolving deltas:  68% (11/16)   [Kremote: Resolving deltas:  75% (12/16)   [Kremote: Resolving deltas:  87% (14/16)   [Kremote: Resolving deltas: 100% (16/16)   [Kremote: Resolving deltas: 100% (16/16), done.[K
+To https://github.com/ColinFay/r-language-definition.git
+   88ff27a..a25babd  master -> master
+]0;/home/colin/R/r-language-definition]0;colin@colin-MacBookPro: ~/R/r-language-definition[01;32mcolin@colin-MacBookPro[00m:[01;34m~/R/r-language-definition[00m$ déconnexion
+[K]0;colin@colin-MacBookPro: ~/R/r-language-definition[01;32mcolin@colin-MacBookPro[00m:[01;34m~/R/r-language-definition[00m$ git pull
+Already up-to-date.
+]0;/home/colin/R/r-language-definition]0;colin@colin-MacBookPro: ~/R/r-language-definition[01;32mcolin@colin-MacBookPro[00m:[01;34m~/R/r-language-definition[00m$ git pu[K[Kcommit -& -[K[K[Ka - [Kù[Km "index-[K"

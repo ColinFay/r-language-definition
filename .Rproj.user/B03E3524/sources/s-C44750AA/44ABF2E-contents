@@ -1,5 +1,0 @@
-book_filename: "r-language-definition"
-language:
-  ui:
-    chapter_name: "Chapter "
-output_dir: "docs"
